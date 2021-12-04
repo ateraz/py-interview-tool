@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/js/jquery.terminal.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/css/jquery.terminal.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" data-name="vs/editor/editor.main" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.30.1/min/vs/editor/editor.main.min.css">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.18.1/full/pyodide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.30.1/min/vs/loader.min.js"></script>
+    <style>
+      .half {
+        float: left;
+        width: 50%;
+        height: 500px;
+        overflow-y: scroll;
+      }
+      .terminal {
+        --size: 1.5;
+        --color: rgba(255, 255, 255, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="run">Run</button>
+    <br/>
+    <div class="half" id="editor"></div>
+    <div class="half terminal"></div>
+    <script type="text/javascript" src="./dist/monaco.bundle.js"></script>
+  </body>
+</html>

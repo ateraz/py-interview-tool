@@ -1,0 +1,27 @@
+{
+  "name": "yjs-monaco-demo",
+  "version": "1.0.0",
+  "description": "Yjs ❤ Monaco",
+  "main": "index.js",
+  "scripts": {
+    "dist": "webpack --mode=production",
+    "start": "webpack-dev-server --open-page monaco.html --host 0.0.0.0"
+  },
+  "author": "Kevin Jahns <kevin.jahns@pm.me>",
+  "license": "UNLICENSE",
+  "dependencies": {
+    "css-loader": "^2.1.1",
+    "monaco-editor": "^0.21.2",
+    "serve": "^11.3.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2",
+    "y-monaco": "0.1.2",
+    "y-webrtc": "^10.2.2",
+    "yjs": "^13.5.20"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
+  }
+}
